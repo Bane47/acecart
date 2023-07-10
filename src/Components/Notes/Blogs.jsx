@@ -34,7 +34,7 @@ function NotesBlogs (){
 
 
     {blogs.length > 0 && (
- <div className='row '>
+ <div className='row d-flex justify-content-center'>
     {blogs.map((blog)=>(
        <Card className='m-2 blogsCard rounded-0 shadow' key={blog.id}>
           

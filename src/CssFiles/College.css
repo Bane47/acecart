@@ -14,6 +14,7 @@
 
 .collegeHeader{
     background-image: url('http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/College-11.jpg');
+    background-size: cover;
   padding-bottom:225px;
     background-repeat: no-repeat;
 }
@@ -39,8 +40,8 @@
 
 /* College second section  */
 .collegeSecondSection{
-    background-color: #B2B3B5;
-padding-left: 0px;
+    background-color: #b2b5b5;
+padding: 0px !important;
 }
 .collegeSingleImage{
     display: block;

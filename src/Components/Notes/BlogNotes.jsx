@@ -27,7 +27,7 @@ const BlogNotes = () => {
                 console.log(response.data)
                 setNotes(response.data)
             })
-            axios.get(`https://bane47.onrender.com/${id}`)
+            axios.get(`https://bane47.onrender.com/Blogs/${id}`)
             .then((response) => {
                 console.log(response.data)
                 setTitle(response.data)

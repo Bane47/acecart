@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import { useParams, useNavigate } from 'react-router-dom';
@@ -8,6 +8,7 @@ import '../../CssFiles/SchoolProductsSecond.css'
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import { CartProvider, useCart } from 'react-use-cart';
+import { Link } from 'react-router-dom';
 const SchoolUniformProducts = () => {
 
   var Fname, Lname, email, password, category, dname, dcode, city, state, gst, resid;
@@ -376,6 +377,7 @@ const SchoolUniformProducts = () => {
               </div>
 
             </div>
+           
             <div>
 
               <div className='bg-light p-2'>Description of product</div>
@@ -405,6 +407,8 @@ const SchoolUniformProducts = () => {
 
                   <Container>
                     <div className='row d-flex justify-content-center '>
+                    <Link to='/schooluniformproduct'>
+
                       <div className="col-lg-2 col-sm-2 col-md-2 col-xl-2">
                         <img
                           className="col-lg-12 col-sm-12 col-md-12 col-xl-12"
@@ -413,6 +417,7 @@ const SchoolUniformProducts = () => {
                         />
                         <h6 className='text-center'>{carImg.name}</h6>
                       </div>
+                      </Link>
 
 
                     </div>
