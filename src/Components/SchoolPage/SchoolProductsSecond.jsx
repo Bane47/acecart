@@ -31,10 +31,7 @@ const SchoolUniformProducts = () => {
     updateItemQuantity,
     removeItem,
     emptyCart } = useCart();
-  const onBackClick = (e) => {
-    e.preventDefault();
-    navigate("/school")
-  }
+ 
   const myToastAdded = () => toast.success("Successfully add to cart!", {
     position: "top-center",
     autoClose: 5000,
