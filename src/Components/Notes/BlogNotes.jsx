@@ -8,7 +8,6 @@ import { MDBInput } from 'mdb-react-ui-kit';
 import { MDBTextArea } from 'mdb-react-ui-kit';
 import { useForm } from 'react-hook-form'
 import { useParams } from 'react-router-dom'
-import BaseUrl from '../BaseUrl/BaseUrl'
 
 
 const BlogNotes = () => {

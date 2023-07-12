@@ -5,25 +5,28 @@ import { Container } from 'react-bootstrap';
 import '../../CssFiles/Notes.css'
 import { Link } from 'react-router-dom';
 import BlogNotes from './BlogNotes';
-import BaseUrl from '../BaseUrl/BaseUrl'
+import useAxios from '../Axios/Axios';
 
 
 function NotesBlogs (){
-
+const myData = useAxios(`https://bane47.onrender.com/Blogs`)
     const [blogs,setBlogs] = useState([]);
 
-    const fetchData = () => {
-        fetch(`https://bane47.onrender.com/Blogs`)
-          .then((response) => {
-            return response.json();
-          })
-          .then((data) => {
-            setBlogs(data);
-            console.log(data);
-          })
-      }
+    // const fetchData = () => {
+    //     fetch(`https://bane47.onrender.com/Blogs`)
+    //       .then((response) => {
+    //         return response.json();
+    //       })
+    //       .then((data) => {
+    //         setBlogs(data);
+    //         console.log(data);
+    //       })
+    //   }
       useEffect(() => {
-        fetchData();
+        // fetchData();
+        console.log("Hi")
+        setBlogs(myData)
+        console.log(blogs)
     
       }, [])
     

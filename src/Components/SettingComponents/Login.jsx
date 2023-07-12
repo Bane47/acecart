@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import SecondSection from '../SecondSection'
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
+import useAxios from '../Axios/Axios';
 
 const Login = () => {
   const history = useNavigate()
@@ -26,17 +27,7 @@ const Login = () => {
     closeButton: false,
     theme: "colored"
   });
-  // const myToastPass = () => toast.success("Successfully logged in", {
-  //   position: "top-center",
-  //   autoClose: 5000,
-  //   hideProgressBar: true,
-  //   closeOnClick: true,
-  //   pauseOnHover: false,
-  //   draggable: false,
-  //   progress: undefined,
-  //   closeButton: false,
-  //   theme: "colored"
-  // })
+
 
 
   const fetchData = (e) => {
@@ -99,11 +90,9 @@ const Login = () => {
             
           
 
-          // history("/")
         } else {
           console.log('Login failed');
           myToastFail();
-          // alert("Password or the user name is invalid")
         }
       })
       .catch((error) => {

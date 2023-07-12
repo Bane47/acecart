@@ -8,7 +8,6 @@ import '../App.css'
 import "primereact/resources/primereact.min.css";
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import Card from 'react-bootstrap/Card';
-import { Height, Visibility } from '@mui/icons-material';
 import { useState, useRef } from 'react';
 import { Container } from 'react-bootstrap';
 
